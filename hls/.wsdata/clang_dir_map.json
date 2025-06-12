@@ -1,0 +1,8 @@
+{
+  "workspaceRoot": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls",
+  "mapping": {
+    "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/hwswcode/labs/lab2/axis_gemv_fixed/tb_axis_gemv_fixed.cpp": "axil_fixed_gemv",
+    "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/hwswcode/labs/lab2/axis_gemv_fixed/axis_gemv_fixed.h": "axil_fixed_gemv",
+    "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/hwswcode/labs/lab2/axis_gemv_fixed/axis_gemv_fixed.cpp": "axil_fixed_gemv"
+  }
+}
