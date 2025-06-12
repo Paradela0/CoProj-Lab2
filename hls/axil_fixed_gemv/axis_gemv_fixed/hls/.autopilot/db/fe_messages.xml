@@ -1,0 +1,18 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="axis_gemv_fixed" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=axis_gemv_fixed" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axis_gemv_fixed" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axis_gemv_fixed" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=strm_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axis_gemv_fixed" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=strm_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axis_gemv_fixed" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=512*512" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

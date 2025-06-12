@@ -1,0 +1,564 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z010-clg400-1</Part>
+        <TopModelName>axis_gemv_fixed</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.091</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>13</Best-caseLatency>
+            <Average-caseLatency>131341</Average-caseLatency>
+            <Worst-caseLatency>262669</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.130 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>1.313 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>2.627 ms</Worst-caseRealTimeLatency>
+            <Interval-min>14</Interval-min>
+            <Interval-max>262670</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:6</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>1</BRAM_18K>
+            <DSP>2</DSP>
+            <FF>439</FF>
+            <LUT>521</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>120</BRAM_18K>
+            <DSP>80</DSP>
+            <FF>35200</FF>
+            <LUT>17600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>axis_gemv_fixed</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>axis_gemv_fixed</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_in_TDATA</name>
+            <Object>strm_in_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_in_TVALID</name>
+            <Object>strm_in_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_in_TREADY</name>
+            <Object>strm_in_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_in_TLAST</name>
+            <Object>strm_in_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_in_TKEEP</name>
+            <Object>strm_in_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_in_TSTRB</name>
+            <Object>strm_in_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_out_TDATA</name>
+            <Object>strm_out_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_out_TVALID</name>
+            <Object>strm_out_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_out_TREADY</name>
+            <Object>strm_out_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_out_TLAST</name>
+            <Object>strm_out_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_out_TKEEP</name>
+            <Object>strm_out_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>strm_out_TSTRB</name>
+            <Object>strm_out_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>axis_gemv_fixed</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_axis_gemv_fixed_Pipeline_VITIS_LOOP_25_1_fu_76</InstName>
+                    <ModuleName>axis_gemv_fixed_Pipeline_VITIS_LOOP_25_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>76</ID>
+                    <BindInstances>icmp_ln25_fu_120_p2 add_ln25_fu_126_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_axis_gemv_fixed_Pipeline_VITIS_LOOP_32_2_fu_91</InstName>
+                    <ModuleName>axis_gemv_fixed_Pipeline_VITIS_LOOP_32_2</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>91</ID>
+                    <BindInstances>mul_25s_25s_50_1_1_U7 icmp_ln41_fu_167_p2 add_ln42_fu_210_p2 icmp_ln44_fu_173_p2 i_2_fu_179_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>localmem_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>axis_gemv_fixed_Pipeline_VITIS_LOOP_25_1</Name>
+            <Loops>
+                <VITIS_LOOP_25_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.091</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>2</Best-caseLatency>
+                    <Average-caseLatency>258</Average-caseLatency>
+                    <Worst-caseLatency>514</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.580 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>5.140 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1 ~ 513</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_25_1>
+                        <Name>VITIS_LOOP_25_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>0</min>
+                                <max>512</max>
+                            </range>
+                        </TripCount>
+                        <Latency>0 ~ 512</Latency>
+                        <AbsoluteTimeLatency>0 ns ~ 5.120 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_25_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:23</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_25_1>
+                            <Name>VITIS_LOOP_25_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:25</SourceLocation>
+                        </VITIS_LOOP_25_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>13</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>86</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_25_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln25_fu_120_p2" SOURCE="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln25" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_25_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_fu_126_p2" SOURCE="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln25" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>axis_gemv_fixed_Pipeline_VITIS_LOOP_32_2</Name>
+            <Loops>
+                <VITIS_LOOP_32_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.650</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>5</Best-caseLatency>
+                    <Average-caseLatency>131077</Average-caseLatency>
+                    <Worst-caseLatency>262149</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>50.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.311 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.621 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1 ~ 262145</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_32_2>
+                        <Name>VITIS_LOOP_32_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>0</min>
+                                <max>262144</max>
+                            </range>
+                        </TripCount>
+                        <Latency>3 ~ 262147</Latency>
+                        <AbsoluteTimeLatency>30.000 ns ~ 2.621 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_32_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:23</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_32_2>
+                            <Name>VITIS_LOOP_32_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:53</SourceLocation>
+                        </VITIS_LOOP_32_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>2</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>2</UTIL_DSP>
+                    <FF>397</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>331</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_25s_25s_50_1_1_U7" SOURCE="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:39" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln41_fu_167_p2" SOURCE="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln41" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln42_fu_210_p2" SOURCE="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln44_fu_173_p2" SOURCE="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:44" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln44" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_179_p2" SOURCE="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="i_2" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>axis_gemv_fixed</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.091</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>13</Best-caseLatency>
+                    <Average-caseLatency>131341</Average-caseLatency>
+                    <Worst-caseLatency>262669</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.130 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.313 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.627 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>14 ~ 262670</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:6</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>1</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>2</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>2</UTIL_DSP>
+                    <FF>439</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>521</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="localmem_U" SOURCE="" STORAGESIZE="25 512 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="localmem" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_csim code_analyzer="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="strm_in" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_fixed&lt;25, 7, AP_TRN, AP_WRAP, 0&gt;, 0, 0, 0, '8', false&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="strm_in" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="strm_out" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_fixed&lt;32, 16, AP_TRN, AP_WRAP, 0&gt;, 0, 0, 0, '8', false&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="strm_out" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">strm_in:strm_out</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="strm_in" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="32" portPrefix="strm_in_">
+            <ports>
+                <port>strm_in_TDATA</port>
+                <port>strm_in_TKEEP</port>
+                <port>strm_in_TLAST</port>
+                <port>strm_in_TREADY</port>
+                <port>strm_in_TSTRB</port>
+                <port>strm_in_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="strm_in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="strm_out" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="32" portPrefix="strm_out_">
+            <ports>
+                <port>strm_out_TDATA</port>
+                <port>strm_out_TKEEP</port>
+                <port>strm_out_TLAST</port>
+                <port>strm_out_TREADY</port>
+                <port>strm_out_TSTRB</port>
+                <port>strm_out_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="strm_out"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="9">Interface, Direction, Register Mode, TDATA, TKEEP, TLAST, TREADY, TSTRB, TVALID</keys>
+                    <column name="strm_in">in, both, 32, 4, 1, 1, 4, 1</column>
+                    <column name="strm_out">out, both, 32, 4, 1, 1, 4, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="strm_in">in, stream&lt;hls::axis&lt;ap_fixed&lt;25 7 AP_TRN AP_WRAP 0&gt; 0 0 0 '8' false&gt; 0&gt;&amp;</column>
+                    <column name="strm_out">out, stream&lt;hls::axis&lt;ap_fixed&lt;32 16 AP_TRN AP_WRAP 0&gt; 0 0 0 '8' false&gt; 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="strm_in">strm_in, interface</column>
+                    <column name="strm_out">strm_out, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings."/>
+    </ReportBurst>
+    <PragmaReport>
+        <Pragma type="interface" location="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:11" status="valid" parentFunction="axis_gemv_fixed" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+        <Pragma type="interface" location="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:12" status="valid" parentFunction="axis_gemv_fixed" variable="strm_in" isDirective="0" options="axis port=strm_in"/>
+        <Pragma type="interface" location="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:13" status="valid" parentFunction="axis_gemv_fixed" variable="strm_out" isDirective="0" options="axis port=strm_out"/>
+        <Pragma type="loop_tripcount" location="../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:33" status="valid" parentFunction="axis_gemv_fixed" variable="" isDirective="0" options="max=512*512"/>
+    </PragmaReport>
+</profile>
+

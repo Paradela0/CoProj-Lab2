@@ -1,0 +1,11 @@
+{
+  "name": "axil_fixed_gemv",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "axis_gemv_fixed"
+  }
+}

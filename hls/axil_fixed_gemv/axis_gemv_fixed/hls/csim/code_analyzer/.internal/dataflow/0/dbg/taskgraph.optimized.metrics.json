@@ -1,0 +1,1781 @@
+[
+    {
+        "name": "_Z15axis_gemv_fixedRN3hls6streamINS_4axisI8ap_fixedILi25ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi32ELi16ELS3_5ELS4_3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEE",
+        "df_function": "%F977",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                        "line": 6,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                        "line": 55,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                        "line": 6,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                        "line": 55,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 axis_gemv_fixed) BB 'codeRepl' [Atomic,Loop,Atomic] 'Outline_T3_F977_R2_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                        "line": 25,
+                        "column": 4
+                    },
+                    "end_loc": {
+                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                        "line": 29,
+                        "column": 4
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 7,
+                                    "column": 0
+                                },
+                                "id": "VId_1796_*0(0,64)arg",
+                                "name": "strm_in",
+                                "display_name": "stream<hls::axis<ap_fixed<25, 7, AP_TRN, AP_WRAP, 0>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0> &strm_in"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A0(0,32)",
+                                "name": "tmpi.data",
+                                "display_name": "Type_data strmin_t::data"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A1(32,8)",
+                                "name": "tmpi.keep",
+                                "display_name": "Type_keep strmin_t::keep"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 4,
+                                                "end": 5,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A2(40,8)",
+                                "name": "tmpi.strb",
+                                "display_name": "Type_strb strmin_t::strb"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 5,
+                                                "end": 6,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A3(48,8)",
+                                "name": "tmpi.user",
+                                "display_name": "Type_user strmin_t::user"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 6,
+                                                "end": 7,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A4(56,8)",
+                                "name": "tmpi.last",
+                                "display_name": "Type_last strmin_t::last"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7,
+                                                "end": 8,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A5(64,8)",
+                                "name": "tmpi.id",
+                                "display_name": "Type_id strmin_t::id"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 8,
+                                                "end": 9,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A6(72,8)",
+                                "name": "tmpi.dest",
+                                "display_name": "Type_dest strmin_t::dest"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 9,
+                                                "end": 10,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A7(80,16)[?(?,8)]",
+                                "name": "tmpi",
+                                "display_name": "strmin_t tmpi"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 10,
+                                                "end": 11,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 11,
+                                                "end": 12,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 23,
+                                    "column": 0
+                                },
+                                "id": "VId_1806_!c?(?,?)",
+                                "name": "i",
+                                "display_name": "count_t i"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 22,
+                                    "column": 0
+                                },
+                                "id": "VId_16_[?(?,32)]",
+                                "name": "localmem[*]",
+                                "display_name": "datai_t localmem[512]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 514
+                },
+                "subregions": [
+                    {
+                        "id": "%F978_R1",
+                        "description": "<function entry>"
+                    },
+                    {
+                        "id": "%F978_R2",
+                        "description": "<loop 'for.body'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 25,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 29,
+                                "column": 4
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F978_R5",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": [],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 512,
+                            "max": 512
+                        },
+                        "ii": {
+                            "min": 1,
+                            "max": 1
+                        },
+                        "effective_tc": {
+                            "min": 512,
+                            "max": 512
+                        },
+                        "tc": {
+                            "min": 512,
+                            "max": 512
+                        },
+                        "ureg_id": "%L33",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 25,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 29,
+                                "column": 4
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "localmem",
+                                    "display_name": "localmem",
+                                    "id": "16",
+                                    "location": {
+                                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                        "line": 22,
+                                        "column": 0
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 axis_gemv_fixed) BB 'codeRepl1' [Atomic] 'Outline_T4_F977_R19_Atomic'>",
+                "display_name": "Process 2",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 23,
+                                    "column": 0
+                                },
+                                "id": "VId_1806_!c?(?,?)",
+                                "name": "i",
+                                "display_name": "count_t i"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 21,
+                                    "column": 0
+                                },
+                                "id": "VId_15_!c?(?,?)",
+                                "name": "last_velem",
+                                "display_name": "count_t last_velem"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 1
+                },
+                "subregions": [
+                    {
+                        "id": "%F979_R1",
+                        "description": "<function entry>"
+                    }
+                ],
+                "subdataflow": []
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 axis_gemv_fixed) BB 'codeRepl2' [Atomic,Loop,Atomic] 'Outline_T5_F977_R20_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                        "line": 32,
+                        "column": 4
+                    },
+                    "end_loc": {
+                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                        "line": 54,
+                        "column": 4
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 7,
+                                    "column": 0
+                                },
+                                "id": "VId_1796_*0(0,64)arg",
+                                "name": "strm_in",
+                                "display_name": "stream<hls::axis<ap_fixed<25, 7, AP_TRN, AP_WRAP, 0>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0> &strm_in"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A0(0,32)",
+                                "name": "tmpi.data",
+                                "display_name": "Type_data strmin_t::data"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A1(32,8)",
+                                "name": "tmpi.keep",
+                                "display_name": "Type_keep strmin_t::keep"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 4,
+                                                "end": 5,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A2(40,8)",
+                                "name": "tmpi.strb",
+                                "display_name": "Type_strb strmin_t::strb"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 5,
+                                                "end": 6,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A3(48,8)",
+                                "name": "tmpi.user",
+                                "display_name": "Type_user strmin_t::user"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 6,
+                                                "end": 7,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A4(56,8)",
+                                "name": "tmpi.last",
+                                "display_name": "Type_last strmin_t::last"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7,
+                                                "end": 8,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A5(64,8)",
+                                "name": "tmpi.id",
+                                "display_name": "Type_id strmin_t::id"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 8,
+                                                "end": 9,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A6(72,8)",
+                                "name": "tmpi.dest",
+                                "display_name": "Type_dest strmin_t::dest"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 9,
+                                                "end": 10,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 15,
+                                    "column": 11
+                                },
+                                "id": "VId_1798_.A7(80,16)[?(?,8)]",
+                                "name": "tmpi",
+                                "display_name": "strmin_t tmpi"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 10,
+                                                "end": 11,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 11,
+                                                "end": 12,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 8,
+                                    "column": 0
+                                },
+                                "id": "VId_1797_*0(0,64)arg",
+                                "name": "strm_out",
+                                "display_name": "stream<hls::axis<ap_fixed<32, 16, AP_TRN, AP_WRAP, 0>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0> &strm_out"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Fifo",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 21,
+                                    "column": 0
+                                },
+                                "id": "VId_15_!c?(?,?)",
+                                "name": "last_velem",
+                                "display_name": "count_t last_velem"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 20,
+                                    "column": 0
+                                },
+                                "id": "VId_14_!c?(?,?)",
+                                "name": "acc",
+                                "display_name": "acc_t acc"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 22,
+                                    "column": 0
+                                },
+                                "id": "VId_16_[?(?,32)]",
+                                "name": "localmem[*]",
+                                "display_name": "datai_t localmem[512]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 18,
+                                    "column": 0
+                                },
+                                "id": "VId_11_!c?(?,?)",
+                                "name": "op1",
+                                "display_name": "op_t op1"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 18,
+                                    "column": 0
+                                },
+                                "id": "VId_12_!c?(?,?)",
+                                "name": "op2",
+                                "display_name": "op_t op2"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                    "line": 19,
+                                    "column": 0
+                                },
+                                "id": "VId_13_!c?(?,?)",
+                                "name": "mult",
+                                "display_name": "mul_t mult"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 11
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 1835011
+                },
+                "subregions": [
+                    {
+                        "id": "%F980_R1",
+                        "description": "<function entry>"
+                    },
+                    {
+                        "id": "%F980_R2",
+                        "description": "<loop 'for.cond5'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 32,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 54,
+                                "column": 4
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F980_R12",
+                        "description": "<function exit>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 47,
+                                "column": 18
+                            },
+                            "end_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 47,
+                                "column": 18
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 0,
+                            "max": 1835008
+                        },
+                        "ii": {
+                            "min": 7,
+                            "max": 7
+                        },
+                        "effective_tc": {
+                            "min": 0,
+                            "max": 262144
+                        },
+                        "tc": {
+                            "min": 0,
+                            "max": 262144
+                        },
+                        "ureg_id": "%L32",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 32,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                "line": 54,
+                                "column": 4
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "localmem",
+                                    "display_name": "localmem",
+                                    "id": "16",
+                                    "location": {
+                                        "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                        "line": 22,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 3,
+                                    "max": 3
+                                },
+                                "variables": [
+                                    {
+                                        "name": "i79 = load _ZZ15axis_gemv_fixedRN3hls6streamINS_4axisI8ap_fixedILi25ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi32ELi16ELS3_5ELS4_3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEEE3acc",
+                                        "display_name": "acc",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                            "line": 42,
+                                            "column": 14
+                                        }
+                                    },
+                                    {
+                                        "name": "add.i.i5 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                            "line": 42,
+                                            "column": 14
+                                        }
+                                    },
+                                    {
+                                        "name": "storemerge [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "store storemerge, _ZZ15axis_gemv_fixedRN3hls6streamINS_4axisI8ap_fixedILi25ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi32ELi16ELS3_5ELS4_3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEEE3acc",
+                                        "display_name": "acc",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "i.1 [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "i.2 [phi]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                            "line": 0,
+                                            "column": 0
+                                        }
+                                    },
+                                    {
+                                        "name": "add.i.i [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                                            "line": 53,
+                                            "column": 10
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "strm_in_RAW_1_3_#0": {
+                "name": "strm_in_RAW_1_3_#0",
+                "variable_id": "VId_1796_*0(0,64)arg",
+                "variable_name": "strm_in",
+                "declaration": "stream<hls::axis<ap_fixed<25, 7, AP_TRN, AP_WRAP, 0>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0> &strm_in",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 7,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 74,
+                    "channel_rate": 4.0326733736201036E-5
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "localmem[*]_WAW_1_3_#1": {
+                "name": "localmem[*]_WAW_1_3_#1",
+                "variable_id": "VId_16_[?(?,32)]",
+                "variable_name": "localmem[*]",
+                "declaration": "datai_t localmem[512]",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 25,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 22,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "i_RAW_3_4_#2": {
+                "name": "i_RAW_3_4_#2",
+                "variable_id": "VId_1806_!c?(?,?)",
+                "variable_name": "i",
+                "declaration": "count_t i",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 10,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 23,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 10,
+                    "channel_rate": 5.44955861300014E-6
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "last_velem_WAW_1_4_#3": {
+                "name": "last_velem_WAW_1_4_#3",
+                "variable_id": "VId_15_!c?(?,?)",
+                "variable_name": "last_velem",
+                "declaration": "count_t last_velem",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 10,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 21,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "acc_RAW_1_5_#4": {
+                "name": "acc_RAW_1_5_#4",
+                "variable_id": "VId_14_!c?(?,?)",
+                "variable_name": "acc",
+                "declaration": "acc_t acc",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 59,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 20,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 649,
+                    "channel_rate": 3.536763539837091E-4
+                },
+                "source": "1",
+                "sink": "5"
+            },
+            "last_velem_RAW_4_5_#5": {
+                "name": "last_velem_RAW_4_5_#5",
+                "variable_id": "VId_15_!c?(?,?)",
+                "variable_name": "last_velem",
+                "declaration": "count_t last_velem",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 10,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 21,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 10,
+                    "channel_rate": 5.44955861300014E-6
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "localmem[*]_RAW_3_5_#6": {
+                "name": "localmem[*]_RAW_3_5_#6",
+                "variable_id": "VId_16_[?(?,32)]",
+                "variable_name": "localmem[*]",
+                "declaration": "datai_t localmem[512]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 25,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 22,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 275,
+                    "channel_rate": 1.4986286185750386E-4
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "tmpi.data_WAW_3_5_#7": {
+                "name": "tmpi.data_WAW_3_5_#7",
+                "variable_id": "VId_1798_.A0(0,32)",
+                "variable_name": "tmpi.data",
+                "declaration": "Type_data strmin_t::data",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 15,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "tmpi.keep_WAW_3_5_#8": {
+                "name": "tmpi.keep_WAW_3_5_#8",
+                "variable_id": "VId_1798_.A1(32,8)",
+                "variable_name": "tmpi.keep",
+                "declaration": "Type_keep strmin_t::keep",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 15,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "tmpi.strb_WAW_3_5_#9": {
+                "name": "tmpi.strb_WAW_3_5_#9",
+                "variable_id": "VId_1798_.A2(40,8)",
+                "variable_name": "tmpi.strb",
+                "declaration": "Type_strb strmin_t::strb",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 15,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "tmpi.user_WAW_3_5_#10": {
+                "name": "tmpi.user_WAW_3_5_#10",
+                "variable_id": "VId_1798_.A3(48,8)",
+                "variable_name": "tmpi.user",
+                "declaration": "Type_user strmin_t::user",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 15,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "tmpi.last_WAW_3_5_#11": {
+                "name": "tmpi.last_WAW_3_5_#11",
+                "variable_id": "VId_1798_.A4(56,8)",
+                "variable_name": "tmpi.last",
+                "declaration": "Type_last strmin_t::last",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 15,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "tmpi.id_WAW_3_5_#12": {
+                "name": "tmpi.id_WAW_3_5_#12",
+                "variable_id": "VId_1798_.A5(64,8)",
+                "variable_name": "tmpi.id",
+                "declaration": "Type_id strmin_t::id",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 15,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "tmpi.dest_WAW_3_5_#13": {
+                "name": "tmpi.dest_WAW_3_5_#13",
+                "variable_id": "VId_1798_.A6(72,8)",
+                "variable_name": "tmpi.dest",
+                "declaration": "Type_dest strmin_t::dest",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 15,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "tmpi_WAW_3_5_#14": {
+                "name": "tmpi_WAW_3_5_#14",
+                "variable_id": "VId_1798_.A7(80,16)[?(?,8)]",
+                "variable_name": "tmpi",
+                "declaration": "strmin_t tmpi",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 15,
+                    "column": 11
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "acc_WAW_1_5_#15": {
+                "name": "acc_WAW_1_5_#15",
+                "variable_id": "VId_14_!c?(?,?)",
+                "variable_name": "acc",
+                "declaration": "acc_t acc",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 59,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 20,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "5"
+            },
+            "strm_in_RAR_3_5_#16": {
+                "name": "strm_in_RAR_3_5_#16",
+                "variable_id": "VId_1796_*0(0,64)arg",
+                "variable_name": "strm_in",
+                "declaration": "stream<hls::axis<ap_fixed<25, 7, AP_TRN, AP_WRAP, 0>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0> &strm_in",
+                "kind": "Fifo",
+                "dependence": "RAR",
+                "channel_width": 74,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 7,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "strm_out_RAW_5_2_#17": {
+                "name": "strm_out_RAW_5_2_#17",
+                "variable_id": "VId_1797_*0(0,64)arg",
+                "variable_name": "strm_out",
+                "declaration": "stream<hls::axis<ap_fixed<32, 16, AP_TRN, AP_WRAP, 0>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0> &strm_out",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 81,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 8,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 891,
+                    "channel_rate": 4.855556724183125E-4
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "op1_RAW_5_2_#18": {
+                "name": "op1_RAW_5_2_#18",
+                "variable_id": "VId_11_!c?(?,?)",
+                "variable_name": "op1",
+                "declaration": "op_t op1",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 25,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 18,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 275,
+                    "channel_rate": 1.4986286185750386E-4
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "op2_RAW_5_2_#19": {
+                "name": "op2_RAW_5_2_#19",
+                "variable_id": "VId_12_!c?(?,?)",
+                "variable_name": "op2",
+                "declaration": "op_t op2",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 25,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 18,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 275,
+                    "channel_rate": 1.4986286185750386E-4
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "mult_RAW_5_2_#20": {
+                "name": "mult_RAW_5_2_#20",
+                "variable_id": "VId_13_!c?(?,?)",
+                "variable_name": "mult",
+                "declaration": "mul_t mult",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 50,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 550,
+                    "channel_rate": 2.997257237150077E-4
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "acc_RAW_5_2_#21": {
+                "name": "acc_RAW_5_2_#21",
+                "variable_id": "VId_14_!c?(?,?)",
+                "variable_name": "acc",
+                "declaration": "acc_t acc",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 59,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 20,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 649,
+                    "channel_rate": 3.536763539837091E-4
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "acc_RAR_5_2_#22": {
+                "name": "acc_RAR_5_2_#22",
+                "variable_id": "VId_14_!c?(?,?)",
+                "variable_name": "acc",
+                "declaration": "acc_t acc",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 59,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 20,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "last_velem_RAR_5_2_#23": {
+                "name": "last_velem_RAR_5_2_#23",
+                "variable_id": "VId_15_!c?(?,?)",
+                "variable_name": "last_velem",
+                "declaration": "count_t last_velem",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 10,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 21,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "localmem[*]_RAR_5_2_#24": {
+                "name": "localmem[*]_RAR_5_2_#24",
+                "variable_id": "VId_16_[?(?,32)]",
+                "variable_name": "localmem[*]",
+                "declaration": "datai_t localmem[512]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 25,
+                "src_loc": {
+                    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                    "line": 22,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "5",
+                "sink": "2"
+            }
+        ]
+    }
+]

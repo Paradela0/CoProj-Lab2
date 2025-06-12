@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/axis_gemv_fixed.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jun 12 12:54:55 2025",
+ "timestampMillis": "1749729295989",
+ "buildStep": {
+  "cmdId": "0b0ecb46-1924-413b-b93b-f8aba5882a7e",
+  "name": "vitis-run",
+  "logFile": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/logs/axis_gemv_fixed.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg --work_dir axis_gemv_fixed ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg",
+   "--work_dir",
+   "axis_gemv_fixed"
+  ],
+  "iniFiles": [],
+  "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 12:54:55 2025",
+ "timestampMillis": "1749729295990",
+ "status": {
+  "cmdId": "0b0ecb46-1924-413b-b93b-f8aba5882a7e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jun 12 12:55:01 2025",
+ "timestampMillis": "1749729301356",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "axis_gemv_fixed",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+     "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jun 12 12:55:01 2025",
+ "timestampMillis": "1749729301359",
+ "buildStep": {
+  "cmdId": "a6d31fd0-664d-42ad-a234-5bbc03dc6de3",
+  "name": "csim_design",
+  "logFile": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 12:55:01 2025",
+ "timestampMillis": "1749729301359",
+ "status": {
+  "cmdId": "a6d31fd0-664d-42ad-a234-5bbc03dc6de3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 12:55:18 2025",
+ "timestampMillis": "1749729318640",
+ "status": {
+  "cmdId": "a6d31fd0-664d-42ad-a234-5bbc03dc6de3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 12:55:18 2025",
+ "timestampMillis": "1749729318829",
+ "status": {
+  "cmdId": "0b0ecb46-1924-413b-b93b-f8aba5882a7e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:55:18 2025",
+ "timestampMillis": "1749729318831",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:55:18 2025",
+ "timestampMillis": "1749729318831",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

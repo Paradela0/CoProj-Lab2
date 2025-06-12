@@ -1,0 +1,51 @@
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: ../../code/axis_gemv_fixed/axis_gemv_fixed.cpp, 
+                   Line: 32, Column: 21 }
+Function:        _Z15axis_gemv_fixedRN3hls6streamINS_4axisI8ap_fixedILi25ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi32ELi16ELS3_5ELS4_3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_32_2
+  - String:          ' '
+  - LoopLoc:         '../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:32:21'
+  - String:          ' '
+  - Function:        'axis_gemv_fixed(hls::stream<hls::axis<ap_fixed<25, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: ../../code/axis_gemv_fixed/axis_gemv_fixed.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ../../code/axis_gemv_fixed/axis_gemv_fixed.cpp, 
+                   Line: 32, Column: 21 }
+Function:        _Z15axis_gemv_fixedRN3hls6streamINS_4axisI8ap_fixedILi25ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi32ELi16ELS3_5ELS4_3ELi0EELm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_32_2
+  - String:          '''('
+  - LoopLoc:         '../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:32:21'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25_1
+  - String:          '> at '
+  - LoopLoc:         '../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:25:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_32_2
+  - String:          '> at '
+  - LoopLoc:         '../../code/axis_gemv_fixed/axis_gemv_fixed.cpp:32:21'
+  - String:          ' '
+...

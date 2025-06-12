@@ -1,0 +1,223 @@
+{
+    "rules": {
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.bc', '/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.bc.d']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=/opt/Xilinx/Vitis_HLS/2024.1/vcxx/data/autopilot",
+                "-vitis-hls=/opt/Xilinx/Vitis_HLS/2024.1",
+                "-fhlstoplevel=axis_gemv_fixed",
+                "-fslxtrace",
+                "../../code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                "-o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.bc"
+            ],
+            "exectime": 2.357581615447998,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.o', '/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.o.d']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/opt/Xilinx/Vitis_HLS/2024.1/vcxx/data/include",
+                "-vitis-hls=/opt/Xilinx/Vitis_HLS/2024.1",
+                "-fhlstoplevel=axis_gemv_fixed",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../../code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+                "-o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.o"
+            ],
+            "exectime": 3.016718626022339,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/tb_axis_gemv_fixed.cpp.0.o', '/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/tb_axis_gemv_fixed.cpp.0.o.d']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/tb_axis_gemv_fixed.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/opt/Xilinx/Vitis_HLS/2024.1/vcxx/data/include",
+                "-vitis-hls=/opt/Xilinx/Vitis_HLS/2024.1",
+                "-fhlstoplevel=axis_gemv_fixed",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../../code/axis_gemv_fixed/tb_axis_gemv_fixed.cpp",
+                "-o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/tb_axis_gemv_fixed.cpp.0.o"
+            ],
+            "exectime": 3.706439971923828,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/syn_srcs.bc']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/llvm-link",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.bc",
+                "-o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/syn_srcs.bc"
+            ],
+            "exectime": 0.062239885330200195,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/opt",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/syn_srcs.bc",
+                "-o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc"
+            ],
+            "exectime": 0.13937997817993164,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/app.exe']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+                "-o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/app.exe",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/tb_axis_gemv_fixed.cpp.0.o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/axis_gemv_fixed.cpp.0.o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=axis_gemv_fixed",
+                "-vitis-hls=/opt/Xilinx/Vitis_HLS/2024.1",
+                "-fslxtrace",
+                "-Wl,-mllvm,-profilerOutputDirectory=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/profiler/0",
+                "-fslxpthreads"
+            ],
+            "exectime": 4.455321788787842,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang-scan-deps",
+                "--compilation-database=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json"
+            ],
+            "exectime": 0.22653889656066895,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output/app.functionGraph']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/staticCallGraph",
+                "-i",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-o",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output/app.functionGraph"
+            ],
+            "exectime": 1.124990701675415,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output/app.functionMapping']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/functionMapper",
+                "--static-xml",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "--function-mapping",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output/app.functionMapping",
+                "--ir-module",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--fn",
+                "977"
+            ],
+            "exectime": 0.5959970951080322,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/bin/.tracing_stdout.txt', '/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/bin/.tracing_stderr.txt']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/rwd",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/build/app.exe"
+            ],
+            "exectime": 0.1168210506439209,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/tracing/csim/build"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output/reduced_programmodel.app']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/optimizer",
+                "-DFGPass",
+                "-appName=app",
+                "-outputDir",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output",
+                "-logDir",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/log",
+                "-pmout=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output/reduced_programmodel.app",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "-staticFile",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-traceFile",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/profiler/0/app_0_0/thread0000-trace.txt",
+                "-o",
+                "/dev/null"
+            ],
+            "exectime": 0.9233605861663818,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        },
+        "['/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/dataflow/0/taskgraph.json']": {
+            "command": [
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/parallelismSelector",
+                "-g",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output/reduced_programmodel.app",
+                "--basepath",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv",
+                "--static-xml",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "--fpga-part",
+                "xc7z010-clg400-1",
+                "--device-totals",
+                "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/data/platform/logic/fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output",
+                "--log-dir",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/log",
+                "--mapping",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/output/app.functionMapping",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--ir-module",
+                "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F977"
+            ],
+            "exectime": 2.784827947616577,
+            "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+        }
+    }
+}

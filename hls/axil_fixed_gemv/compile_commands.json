@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv",
+    "arguments": [
+      "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp"
+    ],
+    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp"
+  },
+  {
+    "directory": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv",
+    "arguments": [
+      "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/Vitis_HLS/2024.1/include",
+      "",
+      "-c",
+      "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/tb_axis_gemv_fixed.cpp"
+    ],
+    "file": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/tb_axis_gemv_fixed.cpp"
+  }
+]

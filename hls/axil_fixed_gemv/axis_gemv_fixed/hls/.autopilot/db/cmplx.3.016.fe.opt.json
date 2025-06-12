@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "axis_gemv_fixed.cpp",
+    "fileloc": 6,
+    "instructions": 93,
+    "loads": {
+      "G": 3,
+      "L": 4
+    },
+    "name": "axis_gemv_fixed",
+    "stores": {
+      "G": 4,
+      "L": 4
+    },
+    "total_instructions": 93
+  }
+}

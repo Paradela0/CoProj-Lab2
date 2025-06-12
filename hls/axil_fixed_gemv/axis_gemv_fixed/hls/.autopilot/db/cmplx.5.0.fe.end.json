@@ -1,0 +1,53 @@
+{
+    "1": {
+        "name": "axis_gemv_fixed_Pipeline_VITIS_LOOP_32_2",
+        "file": "..\/..\/code\/axis_gemv_fixed\/axis_gemv_fixed.cpp",
+        "fileloc": "15",
+        "instructions": "47",
+        "total_instructions": "47",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "G": "2",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "axis_gemv_fixed_Pipeline_VITIS_LOOP_25_1",
+        "file": "..\/..\/code\/axis_gemv_fixed\/axis_gemv_fixed.cpp",
+        "fileloc": "15",
+        "instructions": "32",
+        "total_instructions": "32",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "axis_gemv_fixed",
+        "file": "..\/..\/code\/axis_gemv_fixed\/axis_gemv_fixed.cpp",
+        "fileloc": "6",
+        "instructions": "26",
+        "total_instructions": "105",
+        "calls": "2 1",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        }
+    }
+}

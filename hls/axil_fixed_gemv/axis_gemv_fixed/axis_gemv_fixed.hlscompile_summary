@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/axis_gemv_fixed.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jun 12 12:55:52 2025",
+ "timestampMillis": "1749729352255",
+ "buildStep": {
+  "cmdId": "92213282-024c-46b3-a77d-55d923564e21",
+  "name": "v++",
+  "logFile": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/logs/axis_gemv_fixed.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg --work_dir axis_gemv_fixed ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg",
+   "--work_dir",
+   "axis_gemv_fixed"
+  ],
+  "iniFiles": [
+   {
+    "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg",
+    "content": "part=xc7z010clg400-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=axis_gemv_fixed\nsyn.file=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp\nsyn.file=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.h\ntb.file=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/tb_axis_gemv_fixed.cpp\nclock=10ns\nclock_uncertainty=27%\ncsim.code_analyzer=1"
+   }
+  ],
+  "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 12:55:52 2025",
+ "timestampMillis": "1749729352256",
+ "status": {
+  "cmdId": "92213282-024c-46b3-a77d-55d923564e21",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jun 12 12:55:57 2025",
+ "timestampMillis": "1749729357519",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "axis_gemv_fixed",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp",
+     "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Jun 12 12:55:57 2025",
+ "timestampMillis": "1749729357521",
+ "buildStep": {
+  "cmdId": "3de87b18-b67f-450d-b7f6-91493a6dd3f0",
+  "name": "csynth_design",
+  "logFile": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 12:55:57 2025",
+ "timestampMillis": "1749729357522",
+ "status": {
+  "cmdId": "3de87b18-b67f-450d-b7f6-91493a6dd3f0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:55:57 2025",
+ "timestampMillis": "1749729357523",
+ "report": {
+  "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:55:57 2025",
+ "timestampMillis": "1749729357524",
+ "report": {
+  "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:55:57 2025",
+ "timestampMillis": "1749729357525",
+ "report": {
+  "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:56:15 2025",
+ "timestampMillis": "1749729375917",
+ "report": {
+  "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:56:15 2025",
+ "timestampMillis": "1749729375917",
+ "report": {
+  "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:56:15 2025",
+ "timestampMillis": "1749729375918",
+ "report": {
+  "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 12:56:15 2025",
+ "timestampMillis": "1749729375918",
+ "status": {
+  "cmdId": "3de87b18-b67f-450d-b7f6-91493a6dd3f0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 12 12:56:16 2025",
+ "timestampMillis": "1749729376077",
+ "status": {
+  "cmdId": "92213282-024c-46b3-a77d-55d923564e21",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:56:16 2025",
+ "timestampMillis": "1749729376228",
+ "report": {
+  "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/reports/v++_compile_axis_gemv_fixed_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 12 12:56:16 2025",
+ "timestampMillis": "1749729376228",
+ "report": {
+  "path": "/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/reports/.db/v++_compile_axis_gemv_fixed_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,79 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/axis_gemv_fixed.hlsrun_cosim_summary, at Thu Jun 12 13:07:02 2025
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run cosim -work_dir /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed -config /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg -cmdlineconfig /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Jun 12 13:07:04 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'ist1103088' on host 'cachaca.scdeec.tecnico.ulisboa.pt' (Linux_x86_64 version 5.15.0-135-generic) on Thu Jun 12 13:07:06 WEST 2025
+INFO: [HLS 200-10] On os Linux Mint 21.3
+INFO: [HLS 200-10] In directory '/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv'
+INFO: [HLS 200-2005] Using work_dir /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/axis_gemv_fixed 
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.h' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/axis_gemv_fixed.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/tb_axis_gemv_fixed.cpp' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/code/axis_gemv_fixed/tb_axis_gemv_fixed.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=axis_gemv_fixed' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z010clg400-1' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=27%' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(12)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=1' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /afs/.ist.utl.pt/users/8/8/ist1103088/Desktop/CoProj/CoProj-Lab2/hls/axil_fixed_gemv/hls_config.cfg(5)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx/Vitis_HLS/2024.1/vcxx/libexec//clang++"
+   Compiling apatb_axis_gemv_fixed.cpp
+   Compiling apatb_axis_gemv_fixed_util.cpp
+   Compiling axis_gemv_fixed.cpp_pre.cpp.tb.cpp
+   Compiling tb_axis_gemv_fixed.cpp_pre.cpp.tb.cpp
+   Compiling apatb_axis_gemv_fixed_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+hw:   707.897430419921875   707.897430 (0)
+hw:   -2409.6351318359375 -2409.635132 (0)
+hw:     1693.835205078125  1693.835205 (0)
+hw:  257.9025115966796875   257.902512 (0)
+hw: 2418.3299102783203125  2418.329910 (0)
+hw:  -63.8674774169921875   -63.867477 (1)
+ 48.30 (7.63e-07)   5.88 (2.75e-06) 
+-40.36 (6.10e-07)  33.96 (9.16e-07) 
+-14.12 (2.75e-06) -42.36 (6.10e-07) 
+ 23.82 (3.05e-07)   4.85 (1.53e-06) 
+ 13.07 (3.05e-07) -46.02 (4.58e-07) 
+ -1.07 (3.51e-06)   0.90 (2.29e-06) 
+
+ 20.35 (1.53e-06) 
+-46.77 (4.58e-07) 
+
+707.90 (7.68e+02) 
+-2409.64 (2.43e+03) 
+1693.84 (1.66e+03) 
+257.90 (2.56e+02) 
+2418.33 (2.43e+03) 
+-63.87 (3.05e-07) 
+
+max_err = 6.82e-05
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 14
+INFO: [COSIM 212-333] Generating C post check test bench ...
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 17.52 seconds. Total CPU system time: 3.59 seconds. Total elapsed time: 22.85 seconds; peak allocated memory: 334.395 MB.
